@@ -375,7 +375,7 @@ export default function App() {
         {cart.length > 0 && <div className="p-6 border-t border-slate-100 bg-slate-50 space-y-3 flex-shrink-0">
           <div className="flex justify-between items-center font-bold text-slate-900 text-base"><span>{getText('total')}:</span><span className="text-[#C9A84C] text-xl">₹{getTotalPrice().toLocaleString('en-IN')}</span></div>
           <button onClick={openCheckout} className="w-full bg-gradient-to-r from-[#C9A84C] to-[#E6CA78] hover:from-[#b8973b] hover:to-[#d4b968] text-[#0F172A] text-center font-bold py-3.5 rounded-lg transition shadow-lg shadow-[#C9A84C]/20 text-sm flex items-center justify-center gap-2"><Lock className="w-4 h-4" /> {getText('proceedToCheckout')}</button>
-          <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`${getText('orderRequest')}:\n${cart.map(i => `- ${i.name} (${getText('qty')}: ${i.quantity})`).join('\n')}\n${getText('total')}: ₹${getTotalPrice()}`)}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-[#25D366] hover:bg-[#1ebf59] text-white text-center font-bold py-3 rounded-lg transition shadow text-sm">{getText('orderOnWhatsApp')}</button>
+          <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`${getText('orderRequest')}:\n${cart.map(i => `- ${i.name} (${getText('qty')}: ${i.quantity})`).join('\n')}\n${getText('total')}: ₹${getTotalPrice()}`)}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-[#25D366] hover:bg-[#1ebf59] text-white text-center font-bold py-3 rounded-lg transition shadow text-sm">{getText('orderOnWhatsApp')}</a>
         </div>}
       </div>
     </div>
