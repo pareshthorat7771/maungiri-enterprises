@@ -11,7 +11,7 @@ import {
 
 // ===== CONSTANTS =====
 const MAX_IMAGE_SIZE = 2 * 1024 * 1024 // 2MB
-const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800'
+const FALLBACK_IMAGE = 'https://placehold.co/800x600/1e293b/ffffff?text=Maungiri+Enterprises'
 const WHATSAPP_NUMBER = '919270726556'
 const UPI_ID = 'maungirienterprises@okhdfcbank'
 const MERCHANT_NAME = 'Maungiri Enterprises'
@@ -131,17 +131,17 @@ const ImageUpload = ({ onImageSelect, currentImage, label }) => {
   )
 }
 
-// ===== DATA (Inline to avoid extra files) =====
+// ===== CATEGORY IMAGES (Self-contained placeholders) =====
 const categoryImages = {
-  'Plastic Chairs': 'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&q=80&w=600',
-  'Wooden Furniture': 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=600',
-  'Designer Chairs': 'https://images.unsplash.com/photo-1580481072645-022f9a6d1290?auto=format&fit=crop&q=80&w=600',
-  'Cafe Chairs': 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=600',
-  'Wooden Sofas': 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=600',
-  'Wardrobes': 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600',
-  'Sofa Cum Beds': 'https://images.unsplash.com/photo-1540518614846-7ede433c5172?auto=format&fit=crop&q=80&w=600',
-  'Writing Tables': 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&q=80&w=600',
-  'Appliances': 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&q=80&w=600'
+  'Plastic Chairs': 'https://placehold.co/600x400/1e293b/ffffff?text=Plastic+Chairs',
+  'Wooden Furniture': 'https://placehold.co/600x400/1e293b/ffffff?text=Wooden+Furniture',
+  'Designer Chairs': 'https://placehold.co/600x400/1e293b/ffffff?text=Designer+Chairs',
+  'Cafe Chairs': 'https://placehold.co/600x400/1e293b/ffffff?text=Cafe+Chairs',
+  'Wooden Sofas': 'https://placehold.co/600x400/1e293b/ffffff?text=Wooden+Sofas',
+  'Wardrobes': 'https://placehold.co/600x400/1e293b/ffffff?text=Wardrobes',
+  'Sofa Cum Beds': 'https://placehold.co/600x400/1e293b/ffffff?text=Sofa+Cum+Beds',
+  'Writing Tables': 'https://placehold.co/600x400/1e293b/ffffff?text=Writing+Tables',
+  'Appliances': 'https://placehold.co/600x400/1e293b/ffffff?text=Appliances'
 }
 
 // Generate mock products
@@ -502,7 +502,7 @@ export default function App() {
             </div>
             <div className="md:col-span-5">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-900 group">
-                <ImageWithFallback src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1000" alt="Modern Luxury Interior" className="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                <ImageWithFallback src="https://placehold.co/800x600/1e293b/ffffff?text=Maungiri+Interiors" alt="Modern Luxury Interior" className="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-700/50"><p className="text-xs font-semibold text-[#C9A84C] uppercase tracking-wider">{getText('showroom')}</p><p className="text-sm font-semibold text-white mt-1">Shramik Nagar, Gangapur Road, Nashik</p></div>
               </div>
